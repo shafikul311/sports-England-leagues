@@ -2,15 +2,19 @@ import React from "react";
 import "./LeagueDetails.css";
 import { Jumbotron, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTransgender, faFlag } from "@fortawesome/free-solid-svg-icons";
+import { faTransgender, faFlag ,faFutbol ,faBahai} from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import Male from "./../Photo/male.png";
+import Female from "./../Photo/female.png";
 
 const LeagueDetails = (props) => {
   // console.log(props)
+
+
 
 
   const {
@@ -30,15 +34,19 @@ const LeagueDetails = (props) => {
     strLogo
   } = props.ld;
 
+  console.log(strYoutube)
+
 
   return (
     <div>
       {/* Header banner container */}
       <div className="league-details">
-        <img src={strLogo} style={{ width: "150px" }} alt="" />
+        <img src={strBanner} style={{ width: "300px" }} alt="" />
       </div>
 
+
       <div className="container">
+
         {/* jumbotron league details and image */}
 
         <Jumbotron
@@ -46,10 +54,10 @@ const LeagueDetails = (props) => {
           className="league-details-container"
           style={{ backgroundColor: "#5352ed" }}
         >
-          <Container className="j-container d-flex justify-content-between">
-            <div>
+          <Container className="j-container justify-content-between">
+            <div className="m-4">
               <h4>{strLeague}</h4>
-              <p>Founded :{intFormedYear}</p>
+              <p> <FontAwesomeIcon icon={faBahai} /> Founded :{intFormedYear}</p>
               <p>
                 <FontAwesomeIcon icon={faFlag} /> Country :{strCountry}
               </p>
@@ -57,11 +65,15 @@ const LeagueDetails = (props) => {
                 <FontAwesomeIcon icon={faTransgender} /> Gender :{strGender}
               </p>
 
-              <p>Sports type : {strSport}</p>
+              <p><FontAwesomeIcon icon={faFutbol} /> Sports Type : {strSport}</p>
             </div>
 
-            <div>
-              <img src={strPoster} style={{ height: "200px" }} alt="" />
+            <div className="m-4">
+
+              {
+                strGender ==='Male'? <img src={Male} className="img-style" alt="" /> : <img src={Female} className="img-style" alt="" />
+              }
+              
             </div>
           </Container>
         </Jumbotron>
@@ -73,16 +85,17 @@ const LeagueDetails = (props) => {
         <p>{strDescriptionFR}</p>
 
         <div className="text-align">
-          <a href={strFacebook} className="social">
+          <a href={`https://${strFacebook}`} className="social">
             {" "}
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href={strTwitter} className="social">
+          <a href={`https://${strTwitter}`} className="social">
             {" "}
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href={strYoutube}className="social">
+          <a href={`https://${strYoutube}`} id="youtube" className="social">
             {" "}
+         
             <FontAwesomeIcon icon={faYoutube} />
           </a>
         </div>
@@ -92,3 +105,7 @@ const LeagueDetails = (props) => {
 };
 
 export default LeagueDetails;
+
+
+
+
