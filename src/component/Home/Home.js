@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
+
 import Team from '../../Team/Team';
 import './Home.css';
 // import background from "./images/banner.png";
