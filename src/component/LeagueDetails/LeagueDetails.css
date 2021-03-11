@@ -1,0 +1,40 @@
+.league-details{
+    background-image: url(../img/banner.png);
+    background-image: norepeat;
+    height: 300px;
+    color:#ffffff;
+    text-align: center;
+    padding-top:10%;
+    font-family: 'Lato', sans-serif;
+    
+    justify-content: center;
+    font-size: 40px;
+
+}
+
+.league-details-container{
+    margin-top:10px;
+    color:#ffffff;
+}
+ 
+.j-container{
+    display: flex;
+    justify-content:center;
+    
+}
+.text-align{
+    justify-content: center;
+    display: flex;
+}
+
+
+.social{
+    text-align: center;
+    font-size: 40px;
+    margin:10px;
+    color:grey;
+    padding-bottom: 20px;
+    color:red;
+    
+}
+
