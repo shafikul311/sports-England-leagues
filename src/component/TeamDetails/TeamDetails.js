@@ -15,7 +15,7 @@ const TeamDetails = () => {
         .then((response) =>response.json())
         .then(data =>setLdetails(data.leagues))
 
-    }, [ ])
+    }, [idLeague ])
 
     
 

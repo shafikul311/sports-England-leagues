@@ -26,12 +26,11 @@ const LeagueDetails = (props) => {
     strSport,
     strDescriptionEN,
     strDescriptionFR,
-    strPoster,
+    
     strFacebook,
     strTwitter,
     strYoutube,
-    strBadge,
-    strLogo
+    
   } = props.ld;
 
   console.log(strYoutube)
