@@ -1,18 +1,18 @@
 # Getting Started with Create React App
 
-#SPORTS ENGLAND   LEAGUE INFO
+# SPORTS ENGLAND   LEAGUE INFO
+# user can see a sports league details which is for meal or female sports 
 # HOME page creation 
 # league details page
 # react routing ...
+
+live website : https://sports-england-league.netlify.app/
 #league list from API : https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=England
 
 #league details from API : https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=4346
 
 #used technologu
-# npx create-react-app my-app
-# npm install react-bootstrap bootstrap
-#npm install react-router-dom
+# React.js , React router dom , bootstrap , fontawsome etc
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # react-router-shafikul311
